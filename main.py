@@ -7,7 +7,7 @@ import json
 # app = Flask(__name__)
 
 # 1. SECURITY: Load API key from environment variable
-# Run this in terminal before starting app: export GOOGLE_API_KEY="your_actual_key"
+# Run this in terminal before starting app: exp ort GOOGLE_API_KEY="your_actual_key"
 api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
     raise ValueError("No API key found. Please set the GOOGLE_API_KEY environment variable.")
@@ -16,7 +16,7 @@ genai.configure(api_key=api_key)
 
 # 2. MODEL: Use a valid model name (e.g., gemini-1.5-flash)
 # Note: 'files/...' references expire after 48 hours usually. Ensure the file exists.
-FILE_ID = "files/fzfborpiwvwg" 
+FILE_ID = "files/lz8o3nmiyna8" 
 
 # @app.route('/generate_quiz', methods=['POST'])
 @functions_framework.http
